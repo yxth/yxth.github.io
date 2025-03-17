@@ -14,7 +14,7 @@
 <meta property="og:description" content="记录从零开始使用Hexo框架在Github Pages部署个人博客的完整过程，包含环境搭建、框架配置和自动化部署的详细步骤。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-03-11T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-03-17T11:26:27.264Z">
+<meta property="article:modified_time" content="2025-03-17T12:15:04.713Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
@@ -102,21 +102,18 @@
       
         <h1 id="个人博客搭建"><a href="#个人博客搭建" class="headerlink" title="个人博客搭建"></a>个人博客搭建</h1><h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><p>本实验旨在通过实践操作，掌握基于云计算环境的网站部署技能。<br>具体包括：构建环境并实现个人博客&#x2F;网站的搭建，撰写实验报告，并将这份报告作为一篇博文发布在自己的博客&#x2F;网站上。</p>
 <h2 id="二、实验环境"><a href="#二、实验环境" class="headerlink" title="二、实验环境"></a>二、实验环境</h2><p>硬件环境： 联网的计算机一台<br>软件环境：Windows or Linux</p>
-<h2 id="三、实验步骤与内容"><a href="#三、实验步骤与内容" class="headerlink" title="三、实验步骤与内容"></a>三、实验步骤与内容</h2><h3 id="1-下载node-js和git"><a href="#1-下载node-js和git" class="headerlink" title="1. 下载node.js和git"></a>1. 下载node.js和git</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line">### 2. 使用hexo搭建网站</span><br></pre></td></tr></table></figure>
-<p>首先下载hexo框架npm install -g hexo-cli：</p>
-<p>然后依次执行hexo init和npm install完成初始化</p>
-<p>接着执行hexo g生成页面，使用hexo s可以预览界面</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 3. 部署到Github Page</span><br></pre></td></tr></table></figure>
-<p>首先下载npm install hexo-deployer-git –save </p>
-<p>然后修改配置文件</p>
-<p>执行hexo -d即可部署到github Page</p>
-<pre><code>
-</code></pre>
+<h2 id="三、实验步骤与内容"><a href="#三、实验步骤与内容" class="headerlink" title="三、实验步骤与内容"></a>三、实验步骤与内容</h2><h3 id="1-下载node-js和git"><a href="#1-下载node-js和git" class="headerlink" title="1. 下载node.js和git"></a>1. 下载node.js和git</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Node.js：访问 Node.js 官网下载安装包。</span><br><span class="line">安装完成后，命令行执行 node -v 和 npm -v 验证是否成功。</span><br><span class="line"></span><br><span class="line">Git：访问 Git 官网下载安装包。</span><br><span class="line">安装完成后，命令行执行 git --version 验证是否成功。</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-使用hexo搭建网站"><a href="#2-使用hexo搭建网站" class="headerlink" title="2. 使用hexo搭建网站"></a>2. 使用hexo搭建网站</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">首先下载hexo框架npm install -g hexo-cli：</span><br><span class="line"></span><br><span class="line">然后依次执行hexo init和npm install完成初始化</span><br><span class="line"></span><br><span class="line">接着执行hexo g生成页面，使用hexo s可以预览界面</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-部署到Github-Page"><a href="#3-部署到Github-Page" class="headerlink" title="3. 部署到Github Page"></a>3. 部署到Github Page</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">首先下载npm install hexo-deployer-git --save </span><br><span class="line"></span><br><span class="line">然后修改配置文件</span><br><span class="line"></span><br><span class="line">执行hexo -d即可部署到github Page</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-部署到Github-Page-1"><a href="#3-部署到Github-Page-1" class="headerlink" title="3. 部署到Github Page"></a>3. 部署到Github Page</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">首先下载npm install hexo-deployer-git --save </span><br><span class="line"></span><br><span class="line">然后修改配置文件</span><br><span class="line"></span><br><span class="line">执行hexo -d即可部署到github Page</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://yxth.github.io/2024/03/12/myblog/" data-id="cm8czlfjz000074sife7f5lv1" data-title="个人博客" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://yxth.github.io/2024/03/12/myblog/" data-id="cm8d12yvn0000ccsi576a0sc2" data-title="个人博客" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
